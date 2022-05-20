@@ -15,7 +15,7 @@ public class Cachorro {
 		
 		}
 		
-		void latir(){
+		public void latir(){
 			
 			if (tamanho > 60){
 				

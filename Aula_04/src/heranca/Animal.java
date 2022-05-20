@@ -1,6 +1,6 @@
-package animais;
+package heranca;
 
-public class Gato {
+public class Animal {
 
 	// Atributos
 	private String cor;
