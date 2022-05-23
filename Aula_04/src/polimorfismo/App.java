@@ -15,13 +15,11 @@ public class App {
 			g1.setPeso(50);
 			g1.setTamanho(30);
 
-			g1.emitirSom();
 			System.out.print("O gato " + g1.getCor());
 			g1.dormir();
 			g1.comer();
 
-		
-			// Sobreposição
+					
 			t1.emitirSom();
 
 			// Polimorfismo
@@ -32,6 +30,7 @@ public class App {
 			animais[2] = new Tatu();
 
 			for (Animal a : animais) {
+				// Sobreposição
 				a.emitirSom();
 			}
 			

@@ -5,6 +5,18 @@ public class Calculadora {
 	private double valor1;
 	private double valor2;
 	
+	//Constructor, caso um constructor seja criado, é necessário criar um vazio;
+	public Calculadora() {
+		
+	}
+	
+	//Constructor, passa valor ja na instanciação do objeto
+	public Calculadora(double a, double b) {
+		this.valor1 = a;
+		this.valor2 = a;
+	}
+	
+	
 	public double getValor1() {
 		return valor1;
 	}
@@ -16,6 +28,10 @@ public class Calculadora {
 	}
 	public void setValor2(int valor2) {
 		this.valor2 = valor2;
+	}
+	
+	public double somar() {
+		return valor1 + valor2;
 	}
 	
 	public double somar(double a, double b) {
@@ -39,18 +55,22 @@ public class Calculadora {
 	
 	public double dividir(double a, double b) {
 		
-		this.valor1 = a;
-		this.valor2 = b;
+		double retorno;
 		
-		if (valor1 == 0 || valor2 == 0) {
+		if (b == 0) {
 			
-			
+			retorno = b;
 			
 		} else {
 			
-		return valor1 / valor2;
+			this.valor1 = a;
+			this.valor2 = b;
+			
+			retorno = valor1 / valor2;
 		
 		}
+		
+		return retorno;
 		
 		
 	}
