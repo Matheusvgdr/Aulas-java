@@ -37,8 +37,22 @@ public class Calculadora {
 		return valor1 * valor2;
 	}
 	
-	public double dividir() {
+	public double dividir(double a, double b) {
+		
+		this.valor1 = a;
+		this.valor2 = b;
+		
+		if (valor1 == 0 || valor2 == 0) {
+			
+			
+			
+		} else {
+			
 		return valor1 / valor2;
+		
+		}
+		
+		
 	}
 	
 	

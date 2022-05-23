@@ -1,4 +1,4 @@
-package heranca;
+package polimorfismo;
 
 public class Leao extends Animal {
 public void emitirSom() {

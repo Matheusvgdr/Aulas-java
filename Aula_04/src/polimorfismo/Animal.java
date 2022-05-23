@@ -1,4 +1,4 @@
-package heranca;
+package polimorfismo;
 
 public class Animal {
 
@@ -84,19 +84,6 @@ if (hora < 8) {
 		System.out.println("Miaaaaaauuu!!");
 
 	}
-
-	public void brincar() {
 		
-if (hora < 8) {
-			
-			System.out.print(" não pode brincar");
-			
-		} else {
-			
-			System.out.print(" e brincando com um rato.");
-		}
-		
-		
-	}
 
 }
