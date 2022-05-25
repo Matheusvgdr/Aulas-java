@@ -13,6 +13,7 @@ public class LivrosTeste {
 		meusLivros[0].autor = "bob";
 		meusLivros[1].autor = "sue";
 		meusLivros[2].autor = "ian";
+		
 		while (x < 3){
 		System.out.print(meusLivros[x].titulo);
 		System.out.print(" de ");
