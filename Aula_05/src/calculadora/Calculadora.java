@@ -1,76 +1,81 @@
 package calculadora;
 
-import java.util.Scanner;
-
 public class Calculadora {
-
+	
 	private double valor1;
 	private double valor2;
-	private int op;
-
-	Scanner conta = new Scanner(System.in);
-
+	
+	//Constructor, caso um constructor seja criado, é necessário criar um vazio;
+	public Calculadora() {
+		
+	}
+	
+	//Constructor, passa valor ja na instanciação do objeto
+	public Calculadora(double a, double b) {
+		this.valor1 = a;
+		this.valor2 = a;
+	}
+	
+	
 	public double getValor1() {
 		return valor1;
 	}
-
-	public void setValor1() {
-
-		this.valor1 = conta.nextInt();
-
+	public void setValor1(int valor1) {
+		this.valor1 = valor1;
 	}
-
-	public int getOp() {
-
-		return op;
-	}
-
-	public void setOp() {
-
-		this.op = conta.nextInt();
-
-	}
-
 	public double getValor2() {
 		return valor2;
 	}
-
-	public void setValor2() {
-
-		this.valor2 = conta.nextInt();
+	public void setValor2(int valor2) {
+		this.valor2 = valor2;
 	}
-
+	
 	public double somar() {
-
 		return valor1 + valor2;
-
 	}
-
-	public double subtrair() {
-
+	
+	public double somar(double a, double b) {
+		this.valor1 = a;
+		this.valor2 = b;
+		
+		return valor1 + valor2;
+	}
+	
+	public double subtrair(double a, double b) {
+		this.valor1 = a;
+		this.valor2 = b;
 		return valor1 - valor2;
 	}
-	public double multiplicar() {
-
 	
-	return valor1 * valor2;
+	public double multiplicar(double a, double b) {
+		this.valor1 = a;
+		this.valor2 = b;
+		return valor1 * valor2;
 	}
-
-	public double dividir() {
-
+	
+	public double dividir(double a, double b) {
+		
 		double retorno;
-
-		if (valor2 == 0) {
-
-			retorno = valor2;
-
+		
+		if (b == 0) {
+			
+			retorno = b;
+			
 		} else {
-
+			
+			this.valor1 = a;
+			this.valor2 = b;
+			
 			retorno = valor1 / valor2;
-
+		
 		}
-
+		
 		return retorno;
-
+		
+		
 	}
+	
+	
+	
+
 }
