@@ -8,10 +8,7 @@ public class Sorteio {
 
 	public static void main(String[] args) {
 		
-		Random index = new Random();
-		int valor;
-		String visua = "";
-		
+		Random index = new Random();		
 		
 		List<String> nomes = new ArrayList<String>();
 		
@@ -22,19 +19,20 @@ public class Sorteio {
 		nomes.add("Felipe");
 		nomes.add("Beatriz");
 		
-		System.out.println("O nome é: " + nomes.get(index.nextInt(nomes.size())));
 		
+		 System.out.println("O nome é: " + nomes.get(index.nextInt(nomes.size())));
+		 
+		 
+		 
+		/*
 			for(int i = 0; i <1; i++) {
 				
 				valor = index.nextInt(nomes.size());
 				
 				System.out.println(nomes.get(valor)); 
 				
-				
-				
 			}
-			
-
+		 */
 	}
 
 }
