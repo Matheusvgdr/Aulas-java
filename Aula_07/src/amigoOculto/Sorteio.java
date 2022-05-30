@@ -34,9 +34,7 @@ public class Sorteio {
 			System.out.println("O nome da pessoa: ");
 
 			nomes.add(resposta.next());
-			
-			System.out.println("Qual presente ela quer?");
-			nomes.add(resposta.next());
+	
 		}
 
 		System.out.println("Deseja realizar o sorteio? S/N");
