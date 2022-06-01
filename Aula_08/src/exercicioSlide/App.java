@@ -176,6 +176,7 @@ public class App {
 		return (totalIdades / lista.size());
 	}
 	
+	// Client Generator 
 	
 	public List<Cliente> carregarArray(){
 		
